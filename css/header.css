@@ -94,15 +94,11 @@ header .image-container {
   justify-content: center;
   align-items: center;
 }
-.subtitle-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
+
+
+.text-container{
   text-align: center;
-  padding: 2rem 1rem;
 }
-
-
 #first-subtitle p{
   font-size: 2.5rem;
   margin: 0;
@@ -114,8 +110,8 @@ header .image-container {
   .planta {
   position: absolute;
   right: 0%;
-  bottom: -30%;
-  height: 200%;
+  bottom: -130%;
+  height: 300%;
   max-height: 300px;
   object-fit: contain;
   z-index: 1;
