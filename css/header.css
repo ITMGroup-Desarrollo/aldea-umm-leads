@@ -105,14 +105,16 @@ header .image-container {
   font-family: 'Abhaya', sans-serif;
   color: var(--primary-color);
 }
-
+.planta{
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .planta {
+    display: block;
   position: absolute;
   right: 0%;
-  bottom: -130%;
-  height: 300%;
-  max-height: 300px;
+  bottom: -80%;
+  height: 250px;
   object-fit: contain;
   z-index: 1;
 }
