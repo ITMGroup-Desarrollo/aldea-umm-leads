@@ -3,7 +3,10 @@
   display: grid;
   grid-template-areas:
     "a a a"
+    "a a a"
     "b b b"
+    "b b b"
+    "c c c"
     "c c c"
     "d d d";
   grid-template-columns: 1fr 1fr 1fr;
@@ -12,7 +15,7 @@
 }
 
 .gallery1-item {
-  height: 16rem;
+    height: 16rem;
   width: 100%;
   object-fit: cover;
   object-position: center;
