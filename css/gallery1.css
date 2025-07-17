@@ -6,14 +6,17 @@
 .item-a {
   grid-area: a;
   height: 16rem;
+  object-fit: cover;
 }
 .item-b {
   grid-area: b;
   height: 16rem;
+  object-fit: cover;
 }
 .item-c {
   grid-area: c;
   height: 16rem;
+  object-fit: cover;
 }
 .item-d {
   padding-top: 1rem;
@@ -27,6 +30,7 @@
 .item-d p {
   color: white;
   font-size: 1.05rem;
+  
   margin: 0;
 }
 .item-d h2 {
