@@ -87,7 +87,45 @@ header .image-container {
   width: 10.5rem;
   height: 3rem;
 }
+#first-subtitle {
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subtitle-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+
+#first-subtitle p{
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Abhaya', sans-serif;
+  color: var(--primary-color);
+}
+
 @media screen and (min-width: 768px) {
+  .planta {
+  position: absolute;
+  right: 0%;
+  bottom: -30%;
+  height: 200%;
+  max-height: 300px;
+  object-fit: contain;
+  z-index: 1;
+}
+  #first-subtitle{
+  width: 100%;
+  z-index: 10;
+  max-height: 8rem;
+  
+}
   .image-container-mobile {
     display: none;
   }

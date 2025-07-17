@@ -15,6 +15,14 @@ body{
   font-family: 'lato-bold';
   src: url('../assets/fonts/Lato-Bold.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Abhaya';
+  src: url('../assets/fonts/AbhayaLibre-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Abhaya-bold';
+  src: url('../assets/fonts/AbhayaLibre-Bold.ttf') format('truetype');
+}
 p, h2, a, button {
   font-family: 'lato', sans-serif;
 }
