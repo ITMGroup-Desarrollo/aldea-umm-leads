@@ -1,7 +1,10 @@
+#beneficios{
+    overflow: hidden;
+}
 #beneficios .title-container{
     text-align: center;
     font-family: 'Abhaya', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: var(--primary-color);
     padding: 4rem 1rem 0 ;
 }
@@ -11,22 +14,30 @@
 #beneficios .item{
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
+    padding: 0;
 }
 #beneficios .item .pop{
-    height: 8rem;
+    height: 10rem;
 }
 @media screen and (min-width: 768px) {
+    #beneficios{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
     #beneficios .title-container{
     padding: 3rem 1rem 0 ;
 }
     #beneficios .items-container{
         display: flex;
+        width: fit-content;
         padding: 2rem 2rem;
         justify-content: space-between;
     }
     #beneficios .item .pop{
     height: 7rem;
+    padding: 0 1rem;
 }
 }
 @media screen and (min-width: 768px) and (min-height: 721px) {
