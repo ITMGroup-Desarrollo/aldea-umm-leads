@@ -5,15 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aldea Umm Promociones</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/gallery1.css" />
   <link rel="stylesheet" href="./css/cita-virtual.css" />
   <link rel="stylesheet" href="./css/beneficios.css" />
+  <link rel="stylesheet" href="./css/map.css" />
+  <link rel="stylesheet" href="./css/lotes.css" />
 </head>
 
 <body>
-  <header id="header-container">
+  <!-- <header id="header-container">
     <div class="text-container">
       <div class="image-container-mobile">
         <img src="./assets/aldea-umm-logo.png" alt="Aldea Umm Logo" />
@@ -53,38 +56,60 @@
     </div>
   </section>
   <section>
-  <div class="gallery-container">
-    <img class="gallery1-item item-a" src="./assets/g1-1.webp" alt="planta">
-    <img class="gallery1-item item-b" src="./assets/g1-2.webp" alt="planta">
-    <img class="gallery1-item item-c" src="./assets/g1-3.webp" alt="planta">
-    <div class="gallery1-item item-d text-container">
-      <p>Una de las zonas con <b>mayor crecimiento</b> de</p>
-      <h2>La Riviera Maya</h2>
+    <div class="gallery-container">
+      <img class="gallery1-item item-a" src="./assets/g1-1.webp" alt="planta">
+      <img class="gallery1-item item-b" src="./assets/g1-2.webp" alt="planta">
+      <img class="gallery1-item item-c" src="./assets/g1-3.webp" alt="planta">
+      <div class="gallery1-item item-d text-container">
+        <p>Una de las zonas con <b>mayor crecimiento</b> de</p>
+        <h2>La Riviera Maya</h2>
+      </div>
     </div>
-  </div>
-</section>
-<section>
-  <div id="cita-virtual-container">
-    <div class="function-box">
-      <p>Agenda tu <b class="negritas">cita virtual</b></p>
-      <p>y accede a tu <b class="negritas">bono exclusivo</b></p>
-      <a id="agendar-button2" class="agendar-button" href="#">¡Agenda y obten tu oferta!</a>
+  </section>
+  <section>
+    <div id="cita-virtual-container">
+      <div class="function-box">
+        <p>Agenda tu <b class="negritas">cita virtual</b></p>
+        <p>y accede a tu <b class="negritas">bono exclusivo</b></p>
+        <a id="agendar-button2" class="agendar-button" href="#">¡Agenda y obten tu oferta!</a>
+      </div>
     </div>
-  </div>
-</section>
-<section id="beneficios">
-  <div class="title-container">Beneficios&nbsp;de&nbsp;invertir en&nbsp;aldea&nbsp;umm</div>
-  <div class="items-container">
-    <div class="item"><img class="pop item-a" src="./assets/pop-1.png" alt="pop image1"></div>
-    <div class="division-line"></div>
-    <div class="item"><img class="pop item-a" src="./assets/pop-2.png" alt="pop image2"></div>
-    <div class="division-line"></div>
-    <div class="item"><img class="pop item-a" src="./assets/pop-3.png" alt="pop image3"></div>
-    <div class="division-line"></div>
-    <div class="item"><img class="pop item-a" src="./assets/pop-4.png" alt="pop image4"></div>
-  </div>
-</section>
-<header id="header-container">
+  </section>
+  <section id="beneficios">
+    <div class="title-container">Beneficios&nbsp;de&nbsp;invertir en&nbsp;aldea&nbsp;umm</div>
+    <div class="items-container">
+      <div class="item"><img class="pop item-a" src="./assets/pop-1.png" alt="pop image1"></div>
+      <div class="division-line"></div>
+      <div class="item"><img class="pop item-a" src="./assets/pop-2.png" alt="pop image2"></div>
+      <div class="division-line"></div>
+      <div class="item"><img class="pop item-a" src="./assets/pop-3.png" alt="pop image3"></div>
+      <div class="division-line"></div>
+      <div class="item"><img class="pop item-a" src="./assets/pop-4.png" alt="pop image4"></div>
+    </div>
+  </section> -->
+  <section>
+    <div id="lotes-disponibles">
+      <h2 class="title">Lotes Disponibles</h2>
+      <div class="text-container">
+        <p>Superficies desde 160 m²</p>
+        <div class="division-line"></div>
+        <p>Listos para <b>escriturar</b></p>
+        <div class="division-line"></div>
+        <p><b>Infraestructura</b>: calles blancas, electrificación, drenaje, acceso controlado</p>
+        <div class="division-line"></div>
+        <p>Opciones con <b>ubicación premium</b> dentro del desarrollo</p>
+      </div>
+      <div class="button-container">
+        <p>DISPONIBILIDAD LIMITADA</p>
+        <a id="agendar-button3" class="agendar-button"><img src="/assets/descarga.svg" alt="descarga" style="width: 50px; height: 45px;"><p>BROCHURE</p></a>
+      </div>
+      <div class="images-container">
+        <img id="lote-image1" src="/assets/lotes-1.jpg" alt="lotes-1">
+        <img id="lote-image2" src="/assets/lotes-2.jpg" alt="lotes-1">
+      </div>
+    </div>
+  </section>
+  <header id="header-container">
     <div class="text-container">
       <div class="image-container-mobile">
         <img src="./assets/aldea-umm-logo.png" alt="Aldea Umm Logo" />
@@ -113,8 +138,24 @@
       <img src="./assets/EU.png" alt="EU Logo" />
     </div>
   </header>
+
+  <!-- <section>
+  <div id="map-container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+</section> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/script.js"></script>
 </body>
-<script src="/js/script.js"></script>
+
 <style></style>
 
 </html>

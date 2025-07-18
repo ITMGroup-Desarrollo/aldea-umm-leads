@@ -35,6 +35,8 @@ header #residenciales {
   color: white;
 }
 header .agendar-button {
+  
+  border-radius: 0.6rem;
   padding: 0.5rem 2rem;
   font-size: 1.2rem;
   background-color: var(--secondary-color);

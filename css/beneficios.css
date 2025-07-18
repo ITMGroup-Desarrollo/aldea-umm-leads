@@ -41,7 +41,7 @@
     height: 9rem;
     padding: 0 1rem;
 }
-.division-line{
+#beneficios .division-line{
     height: 6rem;
     width: 2px;
     background-color: var(--primary-color);

@@ -1,0 +1,6 @@
+#map-container{
+    background-image: url("../assets/mapa-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}

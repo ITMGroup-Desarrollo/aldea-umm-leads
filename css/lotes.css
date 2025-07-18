@@ -1,0 +1,79 @@
+#lotes-disponibles {
+  background-color: rgba(0, 76, 69, 0.9);
+  text-align: center;
+  color: white;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+#lotes-disponibles .title {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Abhaya", sans-serif;
+  padding-top: 1rem;
+}
+#lotes-disponibles .text-container {
+  align-self: center;
+  width: 80%;
+  padding-bottom: 2rem;
+}
+#lotes-disponibles .text-container p {
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+}
+#agendar-button3 {
+  padding: 0.3rem 1rem;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 0.6rem;
+}
+.button-container p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-bottom: 0.5rem;
+  margin: 0;
+}
+#agendar-button3 p {
+  margin: 0 0.5rem 0 0;
+  padding-bottom: 0;
+}
+#lotes-disponibles .button-container {
+  align-self: center;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+#agendar-button3 {
+  align-self: center;
+}
+#lotes-disponibles .division-line {
+  height: 1px;
+  background-color: rgb(255, 255, 255, 0.8);
+}
+#lotes-disponibles .images-container {
+  display: flex;
+  gap: 0.5rem;
+}
+#lotes-disponibles .images-container img {
+  display: flex;
+  object-fit: cover;
+  width: 50%;
+  height: 18rem;
+}
+#lote-image1{
+    object-position: left;
+}
+#lote-image2{
+    object-position: center;
+}

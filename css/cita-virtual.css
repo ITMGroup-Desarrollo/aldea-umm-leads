@@ -29,6 +29,10 @@
     font-size: 2rem;
     margin: 0;
 }
+#agendar-button2{
+  
+  border-radius: 0.6rem;
+}
 #cita-virtual-container a{
     margin: 2rem 0 0 0;
     font-size: 1.5rem;
