@@ -21,23 +21,30 @@
 }
 @media screen and (min-width: 768px) {
     #beneficios{
-        width: 100%;
         justify-content: center;
         display: flex;
         flex-direction: column;
     }
     #beneficios .title-container{
+        font-size: 3.5rem;
     padding: 3rem 1rem 0 ;
 }
     #beneficios .items-container{
+        align-items: center;
         display: flex;
+        align-self: center;
         width: fit-content;
         padding: 2rem 2rem;
         justify-content: space-between;
     }
     #beneficios .item .pop{
-    height: 7rem;
+    height: 9rem;
     padding: 0 1rem;
+}
+.division-line{
+    height: 6rem;
+    width: 2px;
+    background-color: var(--primary-color);
 }
 }
 @media screen and (min-width: 768px) and (min-height: 721px) {
