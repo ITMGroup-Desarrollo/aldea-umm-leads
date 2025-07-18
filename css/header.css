@@ -88,6 +88,7 @@ header .image-container {
   height: 3rem;
 }
 #first-subtitle {
+  padding: 1rem 0;
   position: relative;
   background-color: white;
   display: flex;
@@ -112,6 +113,9 @@ header .image-container {
 @media screen and (min-width: 768px) {
   #first-subtitle p{
   font-size: 3.5rem;
+}
+  #first-subtitle{
+  padding: 2rem 0;
 }
   #header-container{
     min-height: 36rem;
