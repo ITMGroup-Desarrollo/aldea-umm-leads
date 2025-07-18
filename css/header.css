@@ -7,7 +7,6 @@ header {
 header .text-container {
   padding: 8rem 0;
   width: 60%;
-  height: 100%;
   background-color: rgba(0, 76, 69, 0.9);
   display: flex;
   flex-direction: column;
@@ -35,7 +34,7 @@ header #residenciales {
   text-align: center;
   color: white;
 }
-header #agendar-button {
+header .agendar-button {
   padding: 0.5rem 2rem;
   font-size: 1.2rem;
   background-color: var(--secondary-color);
@@ -109,6 +108,9 @@ header .image-container {
   display: none;
 }
 @media screen and (min-width: 768px) {
+  #header-container{
+    min-height: 36rem;
+  }
   .planta {
     display: block;
   position: absolute;
@@ -134,7 +136,6 @@ header .image-container {
   }
   header .text-container {
     width: 40%;
-    height: 100%;
   }
   header .title {
     font-size: 4rem;
@@ -163,4 +164,28 @@ header .image-container {
     padding-top: 1.5rem;
     align-items: start;
   }
+}
+@media screen and (min-width: 768px) and (min-height: 721px) {
+  #header-container{
+    min-height: 42rem;
+  }
+  header .title {
+    font-size: 5rem;
+  }
+  header #lotes {
+    font-size: 5rem;
+  }
+  header #residenciales {
+    font-size: 3rem;
+  }
+  header #subtitle {
+    font-size: 1.8rem;
+    flex-direction: row;
+  }
+  header #text {
+    font-size: 1.8rem;
+  }
+  #agendar-button{
+    font-size: 2rem;
+}
 }
