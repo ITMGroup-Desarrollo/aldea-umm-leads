@@ -7,6 +7,7 @@
   grid-area: a;
   height: 16rem;
   object-fit: cover;
+  object-position: center 20%;
 }
 .item-b {
   grid-area: b;
@@ -41,6 +42,12 @@
   margin: 0;
 }
 @media screen and (min-width: 768px) {
+  .item-a {
+  object-position: center;
+}
+  .gallery-container .text-container{
+    padding-top: 1rem;
+  }
   .gallery-container {
     width: 100%;
     display: grid;

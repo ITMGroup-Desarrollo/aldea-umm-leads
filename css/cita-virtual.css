@@ -1,7 +1,7 @@
 #cita-virtual-container {
-  background-image: url("../assets/cita-virtual-fondo.jpg");
+  background-image: url("../assets/cita-virtual-fondo.webp");
   background-size: cover;
-  background-position: left;
+  background-position: center;
   display: flex;
   flex-direction: row-reverse;
   padding-bottom: 24rem;
@@ -39,8 +39,6 @@
 }
 @media screen and (min-width: 768px) {
     #cita-virtual-container {
-  background-image: url("../assets/cita-virtual-fondo.jpg");
-  background-size: cover;
   background-position: bottom;
   padding: 12rem 0;
 }
