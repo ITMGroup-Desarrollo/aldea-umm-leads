@@ -100,7 +100,7 @@ header .image-container {
   text-align: center;
 }
 #first-subtitle p{
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin: 0;
   font-family: 'Abhaya', sans-serif;
   color: var(--primary-color);
@@ -168,7 +168,7 @@ header .image-container {
 }
 @media screen and (min-width: 768px) and (min-height: 721px) {
   #header-container{
-    min-height: 42rem;
+    height: 100vh;
   }
   header .title {
     font-size: 5rem;
