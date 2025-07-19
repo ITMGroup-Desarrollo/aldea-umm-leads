@@ -46,7 +46,7 @@
   object-position: center;
 }
 .item-d{
-  padding:  0;
+  padding: 1rem;
 }
   .gallery-container .text-container{
     padding: 0 0;
@@ -71,9 +71,11 @@
   }
   .item-d p {
     font-size: 1.75rem;
+    padding-top: 1rem;
   }
   .item-d h2 {
     font-size: 5rem;
+    padding-bottom: 1rem;
     margin: 0;
   }
 }
