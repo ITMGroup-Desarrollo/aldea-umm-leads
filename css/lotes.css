@@ -61,19 +61,58 @@
   height: 1px;
   background-color: rgb(255, 255, 255, 0.8);
 }
-#lotes-disponibles .images-container {
+#lotes-disponibles .images-container-mobile {
   display: flex;
   gap: 0.5rem;
 }
-#lotes-disponibles .images-container img {
+#lotes-disponibles .images-container-mobile img {
   display: flex;
   object-fit: cover;
   width: 50%;
   height: 18rem;
 }
-#lote-image1{
-    object-position: left;
+#lote-image1 {
+  object-position: left;
 }
-#lote-image2{
-    object-position: center;
+#lote-image2 {
+  object-position: center;
+}
+@media screen and (min-width: 768px) {
+  #lotes-disponibles .images-container-mobile {
+    display: none;
+  }
+  #lotes-disponibles{
+    text-align: left;
+    
+  }
+  #lotes-disponibles .title{
+    padding-left: 10%;
+  }
+  #lotes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+  height: auto;
+  align-items: stretch;
+  }
+  #lotes-image{
+    background-color: aqua;
+  }
+  #lotes-disponibles,
+  #lotes-image {
+    display: flex;
+    width: 50%;
+  }
+  #lote-image3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #lotes-image {
+  height: auto;
+}
+
+}
+@media screen and (min-width: 768px) and (min-height: 721px) {
 }

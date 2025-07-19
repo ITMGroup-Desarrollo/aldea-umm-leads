@@ -23,7 +23,7 @@ header .title {
   font-family: "lato-bold", sans-serif !important;
   margin: 0;
 }
-header #lotes {
+header #p-lotes {
   font-size: 2.5rem;
   color: white;
   font-family: "lato", sans-serif !important;
@@ -151,7 +151,7 @@ header .image-container {
   header .title {
     font-size: 4rem;
   }
-  header #lotes {
+  header #p-lotes {
     font-size: 4rem;
   }
   header #residenciales {
@@ -183,7 +183,7 @@ header .image-container {
   header .title {
     font-size: 5rem;
   }
-  header #lotes {
+  header #p-lotes {
     font-size: 5rem;
   }
   header #residenciales {

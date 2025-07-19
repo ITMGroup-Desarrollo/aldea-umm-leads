@@ -1,6 +1,6 @@
-body{
-    padding: 0%;
-    margin: 0%;
+body, html {
+  margin: 0;
+  padding: 0;
 }
 :root {
       --primary-color: rgba(0, 76, 69);
