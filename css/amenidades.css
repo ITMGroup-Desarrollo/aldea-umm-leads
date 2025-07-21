@@ -19,8 +19,8 @@
 }
 
 .feature-content {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-size: 1.2rem;
@@ -33,8 +33,8 @@
   flex: 3;
 }
 .feature.active .feature-content {
-    width: 100%;
-    height: 20%;
+    /* width: 100%; */
+    /* height: 20%; */
     align-self: flex-end;
   writing-mode: horizontal-tb;
   transform: rotate(0deg);
@@ -44,17 +44,27 @@
   border-radius: 5px;
 }
 .feature:nth-child(1) {
-  background-color: aqua;
+  background-image: url("../assets/amenidades5.webp");
+  background-size: cover;
+  background-position: center;
 }
 .feature:nth-child(2) {
-  background-color: red;
+  background-image: url("../assets/amenidades2.webp");
+  background-size: cover;
+  background-position: center;
 }
 .feature:nth-child(3) {
-  background-color: purple;
+  background-image: url("../assets/amenidades3.webp");
+  background-size: cover;
+  background-position: center;
 }
 .feature:nth-child(4) {
-  background-color: green;
+  background-image: url("../assets/amenidades4.webp");
+  background-size: cover;
+  background-position: center;
 }
 .feature:nth-child(5) {
-  background-color: blue;
+  background-image: url("../assets/amenidades1.webp");
+  background-size: cover;
+  background-position: center;
 }
