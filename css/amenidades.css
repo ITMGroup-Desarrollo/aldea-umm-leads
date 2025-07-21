@@ -34,6 +34,11 @@
 }
 .feature.active .feature-content {
     display: none;
+}
+.feature.active .feature-content2 {
+    height: 20%;
+    width: 100%;
+    display: flex;
     align-self: flex-end;
   writing-mode: horizontal-tb;
   transform: rotate(0deg);
@@ -41,6 +46,9 @@
   background: rgba(0, 0, 0, 0.4);
   padding: 10px;
   border-radius: 5px;
+}
+.feature .feature-content2 {
+    display: none;
 }
 .feature:nth-child(1) {
   background-image: url("../assets/amenidades5.webp");
