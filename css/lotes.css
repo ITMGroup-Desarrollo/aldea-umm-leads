@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
 }
+#lotes{
+  position: relative;
+}
 #lotes-disponibles .title {
   font-size: 3rem;
   font-weight: 100;
@@ -77,6 +80,9 @@
 #lote-image2 {
   object-position: center;
 }
+#lotes-center-image{
+  display: none;
+}
 @media screen and (min-width: 768px) {
   #lotes-disponibles .images-container-mobile {
     display: none;
@@ -96,6 +102,22 @@
   height: auto;
   align-items: stretch;
   }
+  #lotes-disponibles .text-container {
+    text-align: left;
+    
+  }
+  #lotes-disponibles .text-container {
+    align-self: start;
+    padding-left: 10%;
+    width: 60%;
+}
+  #lotes-disponibles .button-container {
+    padding-left: 10%;
+    align-self: start;
+}
+#agendar-button3 {
+    align-self: start;
+}
   #lotes-image{
     background-color: aqua;
   }
@@ -112,7 +134,23 @@
   #lotes-image {
   height: auto;
 }
+#lotes-center-image {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto; /* o lo que necesites */
+  width: auto;  /* o 100% si quieres */
+}
 
+#lote-image4{
+  height: 16rem;
+  width: 20rem;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid white;
+}
 }
 @media screen and (min-width: 768px) and (min-height: 721px) {
 }

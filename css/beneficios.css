@@ -19,6 +19,9 @@
 #beneficios .item .pop{
     height: 10rem;
 }
+#lotes-image{
+    display: none;
+}
 @media screen and (min-width: 768px) {
     #beneficios{
         justify-content: center;
