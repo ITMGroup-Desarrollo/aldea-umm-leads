@@ -38,10 +38,8 @@
 .feature.active .feature-content2 {
     height: 20%;
     width: 100%;
-    display: flex;
+    display: block;
     align-self: flex-end;
-  writing-mode: horizontal-tb;
-  transform: rotate(0deg);
   font-size: 1.2rem;
   background: rgba(0, 0, 0, 0.4);
   padding: 10px;
