@@ -19,8 +19,6 @@
 }
 
 .feature-content {
-    width: 100%;
-    height: 100%;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-size: 1.2rem;
@@ -39,7 +37,7 @@
 .feature.active .feature-content2 {
     height: 20%;
     width: 100%;
-    display: none;
+    display: block;
     align-self: flex-end;
   font-size: 1.2rem;
   background: rgba(0, 0, 0, 0.4);
