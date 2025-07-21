@@ -141,8 +141,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: auto; /* o lo que necesites */
-  width: auto;  /* o 100% si quieres */
+  height: auto; 
+  width: auto; 
 }
 
 #lote-image4{
@@ -154,4 +154,13 @@
 }
 }
 @media screen and (min-width: 768px) and (min-height: 721px) {
+  #lotes-center-image {
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+  #lote-image4{
+  height: 28rem;
+  width: 36rem;
+}
 }
