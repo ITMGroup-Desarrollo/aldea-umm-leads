@@ -19,8 +19,8 @@
 }
 
 .feature-content {
-    /* width: 100%; */
-    /* height: 100%; */
+    width: 100%;
+    height: 100vh;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-size: 1.2rem;
@@ -33,8 +33,7 @@
   flex: 3;
 }
 .feature.active .feature-content {
-    /* width: 100%; */
-    /* height: 20%; */
+    height: 20vh;
     align-self: flex-end;
   writing-mode: horizontal-tb;
   transform: rotate(0deg);
