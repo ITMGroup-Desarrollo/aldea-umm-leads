@@ -33,7 +33,7 @@
   flex: 3;
 }
 .feature.active .feature-content {
-    height: 20vh;
+    display: none;
     align-self: flex-end;
   writing-mode: horizontal-tb;
   transform: rotate(0deg);
