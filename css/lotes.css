@@ -66,6 +66,7 @@
 }
 #lotes-disponibles .images-container-mobile {
   display: flex;
+  overflow: hidden;
   gap: 0.5rem;
 }
 #lotes-disponibles .images-container-mobile img {
