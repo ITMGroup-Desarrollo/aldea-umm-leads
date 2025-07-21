@@ -20,13 +20,14 @@
 
 .feature-content {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-size: 1.2rem;
   background: rgba(0, 0, 0, 0.4);
   padding: 10px;
   border-radius: 5px;
+  align-content: center;
 }
 
 .feature.active {
