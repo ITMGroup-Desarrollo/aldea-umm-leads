@@ -1,0 +1,101 @@
+#inversion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#inversion #gallery2 {
+   display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.row-top img {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.row-bottom img {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+}
+#inversion .row-top img {
+  height: 15rem;
+  width: 30%;
+}
+#inversion .row-bottom img {
+  height: 15rem;
+  width: 50%;
+}
+#inversion-disponible .division-line {
+  height: 1px;
+  background-color: var(--secondary-color);
+}
+
+#inversion-disponible .title p {
+  padding: 0;
+}
+
+#inversion-disponible p,
+#inversion-disponible span {
+  color: var(--primary-color);
+  margin: 0;
+  padding: 1rem 0;
+  text-align: start;
+  font-family: "Abhaya", sans-serif;
+}
+
+#inversion-disponible .title {
+  display: flex;
+  font-size: 2.5rem;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0;
+}
+
+#inversion-disponible .title,
+#inversion-disponible .color-title {
+  color: var(--secondary-color);
+}
+
+#inversion-disponible .text-dorado {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  #inversion {
+    flex-direction: row;
+  }
+
+  #inversion .text-container {
+    padding: 2rem 2rem;
+  }
+
+  #gallery2 {
+    width: 60%;
+    height: auto;
+    display: flex;
+  }
+
+  #inversion-disponible {
+    width: 40%;
+    height: auto;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 721px) {
+}
