@@ -126,8 +126,8 @@ header .image-container {
     display: block;
   position: absolute;
   right: 0%;
-  bottom: -80%;
-  height: 250px;
+  bottom: -48%;
+  height: 20rem;
   object-fit: contain;
   z-index: 1;
 }
@@ -198,5 +198,11 @@ header .image-container {
   }
   #agendar-button{
     font-size: 2rem;
+}
+.planta {
+  bottom: -53%;
+  height: 24rem;
+  object-fit: contain;
+  z-index: 1;
 }
 }
