@@ -53,7 +53,7 @@
   color: var(--primary-color);
   margin: 0;
   padding: 1rem 0;
-  text-align: start;
+  text-align: center;
   font-family: "Abhaya", sans-serif;
 }
 
@@ -74,7 +74,17 @@
   color: var(--secondary-color);
   font-size: 1.5rem;
 }
-
+  #inversion .row-top img {
+  height: 10rem;
+  width: 30%;
+}
+#inversion .row-bottom img {
+  height: 10rem;
+  width: 50%;
+}
+#inversion-disponible{
+  padding: 1rem 2rem;
+}
 @media screen and (min-width: 768px) {
   #inversion {
     flex-direction: row;
@@ -95,6 +105,22 @@
     height: auto;
     display: flex;
   }
+  #inversion .row-top img {
+  height: 15rem;
+  width: 30%;
+}
+#inversion .row-bottom img {
+  height: 15rem;
+  width: 50%;
+}
+#inversion-disponible p,
+#inversion-disponible span {
+  color: var(--primary-color);
+  margin: 0;
+  padding: 1rem 0;
+  text-align: start;
+  font-family: "Abhaya", sans-serif;
+}
 }
 
 @media screen and (min-width: 768px) and (min-height: 721px) {
