@@ -8,7 +8,7 @@
     background-image: url("../assets/mapa-amarillo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 2rem 0 3rem 0;
+    padding: 3rem 0 4rem 0;
     display: flex;
     flex-direction: column;
 }
@@ -89,9 +89,6 @@
 #map .text-container br {
     display: none;
 }
-#map .text-container {
-    padding: 3rem 0 4rem 0;
-}
 #map .text-container .first-text {
     font-size: 3.5rem;
 }
@@ -118,11 +115,19 @@
     font-weight: 100;
     text-transform: lowercase;
 }
+#map .text-container {
+    gap: 0.5rem;
+    padding: 4rem 0 5rem 0;
+}
 }
 
 @media screen and (min-width: 768px) and (min-height: 721px) {
 #map .map-container{
     background-image: url("../assets/mapa-desktop.png");
     height: 70vh;
+}
+#map .text-container {
+    padding: 4rem 0 5rem 0;
+    gap: 0.5rem;
 }
 }
