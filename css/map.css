@@ -1,6 +1,125 @@
-#map-container{
+#map .map-container{
     background-image: url("../assets/mapa-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 30vh;
+}
+#map .text-container{
+    background-image: url("../assets/mapa-amarillo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+#map .text-container .first-text {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: "Abhaya", sans-serif;
+    font-weight: 100;
+}
+#map .text-container .second-text {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: "Abhaya", sans-serif;
+    font-weight: 100;
+}
+#map .text-container .second-text span {
+    font-size: 1.8rem;
+    font-family: "Abhaya", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#map .text-container .third-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    width: fit-content;
+    align-self: center;
+    padding: 0.5rem 1rem;
+}
+#map .text-container .fourth-text {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: "Abhaya", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+#map #desde {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+}
+#map #dinero {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 0;
+    text-align: center;
+    font-weight: 900;
+}
+#map #moneda {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 0;
+    text-align: center;
+    font-weight: 900;
+}
+@media screen and (min-width: 768px) {
+#map .map-container{
+    background-image: url("../assets/mapa-desktop.png");
+    height: 80vh;
+}
+#map .text-container br {
+    display: none;
+}
+#map .text-container {
+    padding: 3rem 0 4rem 0;
+}
+#map .text-container .first-text {
+    font-size: 3.5rem;
+}
+#map .text-container .fourth-text {
+    font-size: 1.5rem;
+    align-self: center;
+    width: 35%;
+}
+#map #desde {
+    font-size: 1.5rem;
+}
+#map #dinero {
+    font-size: 2.5rem;
+}
+#map #moneda {
+    font-size: 1.8rem;
+}
+#map .text-container .second-text {
+    font-size: 2rem;
+}
+#map .text-container .second-text span {
+    font-size: 2rem;
+    font-family: "Abhaya", sans-serif;
+    font-weight: 100;
+    text-transform: lowercase;
+}
+}
+
+@media screen and (min-width: 768px) and (min-height: 721px) {
+#map .map-container{
+    background-image: url("../assets/mapa-desktop.png");
+    height: 70vh;
+}
 }
