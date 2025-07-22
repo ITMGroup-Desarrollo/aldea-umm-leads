@@ -29,16 +29,6 @@
   flex: 1;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  width: 100%;
-}
-#inversion .row-top img {
-  height: 14rem;
-  width: 30%;
-  max-width: 35%;
-}
-#inversion .row-bottom img {
-  height: 14rem;
-  width: 50%;
 }
 #inversion-disponible .division-line {
   height: 1px;
@@ -81,7 +71,7 @@
 }
 #inversion .row-bottom img {
   height: 10rem;
-  width: 50%;
+  width: 48%;
 }
 #inversion-disponible{
   padding: 1rem 2rem;
