@@ -56,6 +56,9 @@
     font-weight: 100;
     font-style: italic;
 }
+#map .text-container .fourth-text p {
+    margin: 0;
+}
 #map #desde {
     font-size: 1.2rem;
     color: var(--primary-color);
@@ -95,7 +98,7 @@
 #map .text-container .fourth-text {
     font-size: 1.5rem;
     align-self: center;
-    width: 35%;
+    width: 45%;
 }
 #map #desde {
     font-size: 1.5rem;
@@ -104,7 +107,7 @@
     font-size: 2.5rem;
 }
 #map #moneda {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 #map .text-container .second-text {
     font-size: 2rem;
