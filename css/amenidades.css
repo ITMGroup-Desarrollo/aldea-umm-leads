@@ -39,7 +39,6 @@
   justify-content: center;
   color: white;
   font-size: 1.5rem;
-  padding-left: 2rem;
   align-items: center;
   background-color: rgba(0, 76, 69, 1);
 }
@@ -54,7 +53,6 @@
   height: 1rem;
 }
 .feature p {
-  max-width: 40%;
   width: fit-content;
 }
 .swiper-wrapper{
