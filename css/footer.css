@@ -1,0 +1,33 @@
+
+#footer .logos-container{
+    padding: 2rem 0; 
+    display: flex;
+    background-color: var(--primary-color);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+
+}
+#footer img{
+    height: 2rem;
+}
+@media screen and (min-width: 768px) {
+    #footer img{
+    height: 4rem;
+}
+#footer .logos-container{
+    padding: 2rem 0;
+
+}
+}
+@media screen and (min-width: 768px) and (min-height: 721px) {
+    #footer img{
+    height: 4rem;
+}
+#footer .logos-container{
+    padding: 3rem 0;
+    gap: 3rem;
+
+}
+}
