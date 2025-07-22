@@ -26,3 +26,4 @@
   document.querySelector('.features-container').addEventListener('mouseleave', () => {
     features.forEach((f) => f.classList.remove('active'));
   });
+AOS.init();
