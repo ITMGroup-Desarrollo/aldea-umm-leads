@@ -84,6 +84,7 @@
 #lotes-center-image{
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   #lotes-disponibles .images-container-mobile {
     display: none;
