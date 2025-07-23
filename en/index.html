@@ -50,10 +50,7 @@
       <a href="../en/"><img src="../assets/EU.png" alt="EU Logo" /></a>
     </div>
   </header>
-  <!-- Start of Meetings Embed Script -->
-    <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/octavio23?embed=true"></div>
-    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
-  <!-- End of Meetings Embed Script -->
+<div id="hubspot-form"></div>
   <section id="first-subtitle-wrapper" style="padding-top: 1rem; padding-bottom: 1rem;">
     <div id="first-subtitle">
       <div class="text-container">
@@ -258,7 +255,15 @@
     </div>
   </section>
 
-
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "39595277",
+    formId: "204dfa24-d904-4215-97bb-bff75709aeb9",
+    region: "na1",
+    target: "#hubspot-form" // este es el div donde se monta el formulario
+  });
+</script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="/js/script.js"></script>
