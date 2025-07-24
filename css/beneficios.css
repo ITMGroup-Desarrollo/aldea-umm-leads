@@ -19,6 +19,9 @@
 #beneficios .item .pop{
     height: 10rem;
 }
+#beneficios .item .pop.en{
+    height: 8rem;
+}
 #lotes-image{
     display: none;
 }
@@ -44,6 +47,9 @@
     height: 9rem;
     padding: 0 1rem;
 }
+    #beneficios .item .pop.en{
+    height: 8rem;
+}
 #beneficios .division-line{
     height: 6rem;
     width: 2px;
@@ -51,5 +57,7 @@
 }
 }
 @media screen and (min-width: 768px) and (min-height: 721px) {
-
+    #beneficios .item .pop.en{
+    height: 9rem;
+}
 }
