@@ -12,6 +12,9 @@
     display: flex;
     flex-direction: column;
 }
+#map .map-container.en{
+    background-image: url("../assets/mapa-mobile-en.png");
+}
 #map .text-container .first-text {
     font-size: 2.5rem;
     color: white;
@@ -86,11 +89,14 @@
     background-image: url("../assets/mapa-desktop.png");
     height: 80vh;
 }
+#map .map-container.en{
+    background-image: url("../assets/mapa-desktop-en.png");
+}
 #map .text-container br {
     display: none;
 }
-#map .text-container .first-text {
-    font-size: 3.5rem;
+#map .text-container .first-text.en{
+    font-size: 5rem;
 }
 #map .text-container .fourth-text {
     font-size: 1.5rem;
@@ -106,11 +112,11 @@
 #map #moneda {
     font-size: 2rem;
 }
-#map .text-container .second-text {
-    font-size: 2rem;
+#map .text-container .second-text.en {
+    font-size: 3rem;
 }
 #map .text-container .second-text span {
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Abhaya", sans-serif;
     font-weight: 100;
     text-transform: lowercase;

@@ -70,7 +70,11 @@
     object-position: center;
   }
   .item-d p {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+  }
+  .item-d.en p {
+    font-size: 2.1rem;
     padding-top: 1rem;
   }
   .item-d h2 {

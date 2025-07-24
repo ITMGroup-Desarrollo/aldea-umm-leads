@@ -4,6 +4,7 @@ header {
   background-position: center;
   display: flex;
 }
+
 header .text-container {
   padding: 8rem 0;
   width: 60%;
@@ -13,9 +14,11 @@ header .text-container {
   justify-content: center;
   align-items: center;
 }
+
 header .title-container {
   margin: 2rem 0;
 }
+
 header .title {
   font-size: 2.5rem;
   color: var(--secondary-color);
@@ -23,19 +26,22 @@ header .title {
   font-family: "lato-bold", sans-serif !important;
   margin: 0;
 }
+
 header #p-lotes {
   font-size: 2.5rem;
   color: white;
   font-family: "lato", sans-serif !important;
 }
+
 header #residenciales {
   font-size: 1.5rem;
   margin: 0px;
   text-align: center;
   color: white;
 }
+
 header .agendar-button {
-  
+
   border-radius: 0.6rem;
   padding: 0.5rem 2rem;
   font-size: 1.2rem;
@@ -48,10 +54,12 @@ header .agendar-button {
   cursor: pointer;
   margin: 2rem;
 }
+
 header p,
 header h2 {
   margin: 0;
 }
+
 header #subtitle {
   font-size: 1rem;
   padding-bottom: 0.5rem;
@@ -61,6 +69,7 @@ header #subtitle {
   gap: 5px;
   color: var(--secondary-color);
 }
+
 header #text {
   font-size: 0.8rem;
 
@@ -69,26 +78,32 @@ header #text {
   gap: 5px;
   color: white;
 }
+
 header img {
   width: 350px;
   height: 100px;
 }
+
 header .image-container {
   display: none;
 }
+
 .lang-container {
   display: flex;
   margin: 20px auto;
 }
+
 .lang-container img {
   width: 30px;
   height: 30px;
   padding: 10px 5px;
 }
-.image-container-mobile img{
+
+.image-container-mobile img {
   width: 10.5rem;
   height: 3rem;
 }
+
 #first-subtitle {
   padding: 1rem 0;
   position: relative;
@@ -99,74 +114,101 @@ header .image-container {
 }
 
 
-.text-container{
+.text-container {
   text-align: center;
 }
-#first-subtitle p{
+
+#first-subtitle p {
   padding: 0 2rem;
   font-size: 2.5rem;
   margin: 0;
   font-family: 'Abhaya', sans-serif;
   color: var(--primary-color);
 }
-.planta{
+
+.planta {
   display: none;
 }
+#header #p-lotes.en {
+    font-size: 3rem;
+  }
+
+  header #residenciales.en {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+  }
+  #hubspot-form{
+    display: none;
+  }
 @media screen and (min-width: 768px) {
-  #first-subtitle p{
-  font-size: 3.5rem;
-}
-  #first-subtitle{
-  padding: 2rem 0;
-}
-  #header-container{
+  #first-subtitle p {
+    font-size: 3.5rem;
+  }
+
+  #first-subtitle {
+    padding: 2rem 0;
+  }
+
+  #header-container {
     min-height: 36rem;
   }
+
   .planta {
     display: block;
-  position: absolute;
-  right: 0%;
-  bottom: -48%;
-  height: 20rem;
-  object-fit: contain;
-  z-index: 1;
-}
-  #first-subtitle{
-  width: 100%;
-  z-index: 10;
-  max-height: 8rem;
-  
-}
+    position: absolute;
+    right: 0%;
+    bottom: -48%;
+    height: 20rem;
+    object-fit: contain;
+    z-index: 1;
+  }
+
+  #first-subtitle {
+    width: 100%;
+    z-index: 10;
+    max-height: 8rem;
+
+  }
+
   .image-container-mobile {
     display: none;
   }
+
   .lang-container {
     display: flex;
     margin-top: 10px;
     padding-right: 10px;
   }
+
   header .text-container {
     width: 40%;
   }
+
   header .title {
     font-size: 4rem;
   }
+
   header #p-lotes {
     font-size: 4rem;
   }
+
   header #residenciales {
     font-size: 2.4rem;
   }
+
   header #subtitle {
     font-size: 1.4rem;
     flex-direction: row;
   }
+
   header #text {
     font-size: 1.4rem;
   }
+
   header .text-container {
     padding: 4rem 0;
   }
+
   header .image-container {
     width: 60%;
     justify-content: center;
@@ -175,34 +217,56 @@ header .image-container {
     padding-top: 1.5rem;
     align-items: start;
   }
-}
-@media screen and (min-width: 768px) and (min-height: 721px) {
-  #header-container{
-    height: 100vh;
-  }
-  header .title {
-    font-size: 5rem;
-  }
-  header #p-lotes {
-    font-size: 5rem;
-  }
-  header #residenciales {
+
+  header #p-lotes.en {
     font-size: 3rem;
   }
+
+  header #residenciales.en {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+  }
+
+  header #text h2 {
+    font-weight: 100;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 721px) {
+  #header-container {
+    height: 100vh;
+  }
+
+  header .title {
+    font-size: 5.2rem;
+  }
+
+  header #p-lotes.en {
+    font-size: 4rem;
+  }
+
+  header #residenciales.en {
+    font-size: 5rem;
+  }
+
   header #subtitle {
     font-size: 1.8rem;
     flex-direction: row;
   }
+
   header #text {
     font-size: 1.8rem;
   }
-  #agendar-button{
+
+  #agendar-button {
     font-size: 2rem;
-}
-.planta {
-  bottom: -53%;
-  height: 24rem;
-  object-fit: contain;
-  z-index: 1;
-}
+  }
+
+  .planta {
+    bottom: -53%;
+    height: 24rem;
+    object-fit: contain;
+    z-index: 1;
+  }
+
 }
