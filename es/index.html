@@ -51,7 +51,7 @@
       <a href="../en/"><img src="../assets/EU.png" alt="EU Logo" /></a>
     </div>
   </header>
-    <div id="formModal" class="modal hidden">
+  <div id="formModal" class="modal hidden">
     <div class="modal-content">
       <span class="close">&times;</span>
 
@@ -96,7 +96,10 @@
           generar plusvalía o rentas (inversión)</label>
         <label><input type="radio" name="motivo" value="Soy asesor o broker (buscando opciones para mis clientes)">Soy
           asesor o broker (buscando opciones para mis clientes)</label>
-        <button id="toStep4">Siguiente</button>
+        <div class="forms-button-container">
+          <button class="back-button" data-back-step="2">Atrás</button>
+          <button id="toStep4">Siguiente</button>
+        </div>
       </div>
       <!-- Paso 4: Pregunta de inversión -->
       <div class="step step-4 hidden">
@@ -104,7 +107,10 @@
         <label><input type="radio" name="invertir" value="De inmediato">De inmediato</label>
         <label><input type="radio" name="invertir" value="En los próximos meses">En los próximos meses</label>
         <label><input type="radio" name="invertir" value="A largo plazo">A largo plazo</label>
-        <button id="toStep5">Siguiente</button>
+        <div class="forms-button-container">
+          <button class="back-button" data-back-step="3">Atrás</button>
+          <button id="toStep5">Siguiente</button>
+        </div>
       </div>
 
       <!-- Paso 5: Pregunta de precio -->
@@ -112,7 +118,10 @@
         <h2>¿Estás consciente de que nuestros lotes residenciales comienzan en $1,100,000 MXN?</h2>
         <label><input type="radio" name="precio" value="Si">Sí</label>
         <label><input type="radio" name="precio" value="No">No</label>
-        <button id="toStep6">Siguiente</button>
+        <div class="forms-button-container">
+          <button class="back-button" data-back-step="4">Atrás</button>
+          <button id="toStep6">Siguiente</button>
+        </div>
       </div>
 
       <!-- Paso 6: Pregunta de  motivo -->
@@ -120,7 +129,10 @@
         <h2 id="contactoQuestion"></h2>
         <label><input type="radio" name="contacto" value="Videollamada por Zoom">Videollamada por Zoom</label>
         <label><input type="radio" name="contacto" value="Llamada telefónica">Llamada telefónica</label>
-        <button id="toStep7">Siguiente</button>
+        <div class="forms-button-container">
+          <button class="back-button" data-back-step="5">Atrás</button>
+          <button id="toStep7">Siguiente</button>
+        </div>
       </div>
 
       <!-- Paso 7: Calendario -->
@@ -163,13 +175,17 @@
   <section id="beneficios">
     <div class="title-container">Beneficios&nbsp;de&nbsp;invertir en&nbsp;Aldea&nbsp;Umm</div>
     <div class="items-container">
-      <div class="item" data-aos="fade-left" data-aos-delay="0" data-aos-duration="1000"><img class="pop item-a" src="../assets/pop-1.png" alt="pop image1"></div>
+      <div class="item" data-aos="fade-left" data-aos-delay="0" data-aos-duration="1000"><img class="pop item-a"
+          src="../assets/pop-1.png" alt="pop image1"></div>
       <div class="division-line" data-aos="fade-left" data-aos-delay="0" data-aos-duration="1000"></div>
-      <div class="item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"><img class="pop item-a" src="../assets/pop-2.png" alt="pop image2"></div>
+      <div class="item" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"><img class="pop item-a"
+          src="../assets/pop-2.png" alt="pop image2"></div>
       <div class="division-line" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"></div>
-      <div class="item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"><img class="pop item-a" src="../assets/pop-3.png" alt="pop image3"></div>
+      <div class="item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"><img class="pop item-a"
+          src="../assets/pop-3.png" alt="pop image3"></div>
       <div class="division-line" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"></div>
-      <div class="item" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000"><img class="pop item-a" src="../assets/pop-4.png" alt="pop image4"></div>
+      <div class="item" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000"><img class="pop item-a"
+          src="../assets/pop-4.png" alt="pop image4"></div>
     </div>
   </section>
   <section id="lotes">
@@ -325,7 +341,10 @@
       <h2 class="first-text">¡INVIERTE HOY</h2>
       <p class="second-text">en un lote con <span><br>escritura inmediata!</span></p>
       <p class="third-text"><span id="desde">desde</span><span id="dinero">$1.1</span><span id="moneda">MDP</span></p>
-      <span class="fourth-text"><p>Bonos exclusivos por cita virtual agendada.</p><p>Planes de pago personalizado y sin intereses.</p></span>
+      <span class="fourth-text">
+        <p>Bonos exclusivos por cita virtual agendada.</p>
+        <p>Planes de pago personalizado y sin intereses.</p>
+      </span>
     </div>
   </section>
   <section id="footer">

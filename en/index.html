@@ -100,7 +100,10 @@
           advisor or broker (looking for options for my clients)</label>
         <label><input type="radio" name="motivo"
             value="Soy asesor o broker (buscando opciones para mis clientes)"></label>
-        <button id="toStep4">Next</button>
+        <div class="forms-button-container">
+          <button class="back-button" data-back-step="2">Back</button>
+          <button id="toStep4">Next</button>
+        </div>
       </div>
       <!-- Paso 4: Pregunta de inversión -->
       <div class="step step-4 hidden">
@@ -108,7 +111,10 @@
         <label><input type="radio" name="invertir" value="De inmediato">immediately</label>
         <label><input type="radio" name="invertir" value="En los próximos meses">In the coming months</label>
         <label><input type="radio" name="invertir" value="A largo plazo">Long term</label>
-        <button id="toStep5">Next</button>
+        <div class="forms-button-container">
+          <button class="back-button" data-back-step="3">Back</button>
+          <button id="toStep5">Next</button>
+        </div>
       </div>
 
       <!-- Paso 5: Pregunta de precio -->
@@ -116,7 +122,10 @@
         <h2>Are you aware that our residential lots start at $1,100,000 MXN?</h2>
         <label><input type="radio" name="precio" value="si">Yes</label>
         <label><input type="radio" name="precio" value="No">No</label>
-        <button id="toStep6">Next</button>
+        <div class="forms-button-container">
+          <button class="back-button" data-back-step="4">Back</button>
+          <button id="toStep6">Next</button>
+        </div>
       </div>
 
       <!-- Paso 6: Pregunta de  contacto -->
@@ -124,7 +133,10 @@
         <h2 id="contactoQuestion"></h2>
         <label><input type="radio" name="contacto" value="Videollamada por Zoom">Zoom video call</label>
         <label><input type="radio" name="contacto" value="Llamada telefónica">Phone call</label>
-        <button id="toStep7">Next</button>
+        <div class="forms-button-container">
+          <button class="back-button" data-back-step="5">Back</button>
+          <button id="toStep7">Next</button>
+        </div>
       </div>
 
       <!-- Paso 7: Calendario -->
@@ -394,7 +406,7 @@
       console.log(JSON.stringify(data));
     });
   </script> -->
-  
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
