@@ -17,16 +17,12 @@ select#countryCode {
     margin-bottom: 1rem;
 }
 
-input,
-button {
+input {
     padding: 0.8rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-button {
-    width: 30%;
-}
 
 .name-container {
     display: flex;
@@ -78,9 +74,12 @@ button {
     flex-wrap: wrap;
 }
 
-input {
+input,select {
     flex: 1;
-    padding: 0.5rem;
+    border: 2px solid var(--primary-color);
+}
+input:placeholder-shown {
+    font-style: italic;
 }
 
 .step {
@@ -95,4 +94,50 @@ input {
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
+}
+.step h2{
+    color: var(--primary-color);
+    font-size: 2rem;
+font-family: "Abhaya", sans-serif;
+}
+.step button{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+}
+.step button:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+.answers-container{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+.answers-container label {
+    cursor: pointer;
+}
+.country-code {
+        display: flex;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    .close{
+        font-size: 3rem;
+        color: var(--primary-color);
+        font-weight: 900;
+    }
+@media screen and (min-width: 768px) {
+    .country-code {
+        width: auto;
+    }
+    .close{
+        font-size: 2rem;
+    }
 }

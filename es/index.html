@@ -57,7 +57,7 @@
 
       <!-- Paso 1: Formulario -->
       <div class="step step-1">
-        <h2>Agenda una videollamada</h2>
+        <h2>AGENDA UNA CITA</h2>
         <form id="hubspotForm">
           <div class="form-row">
             <input type="text" name="firstname" placeholder="Nombre" required>
@@ -90,12 +90,14 @@
       <!-- Paso 3: Pregunta de contacto -->
       <div class="step step-3 hidden">
         <h2 id="motivoQuestion"></h2>
-        <label><input type="radio" name="motivo" value="Vivirlo y disfrutarlo (uso propio)">Vivirlo y disfrutarlo (uso
+        <div class="answers-container">
+          <label><input type="radio" name="motivo" value="Vivirlo y disfrutarlo (uso propio)">Vivirlo y disfrutarlo (uso
           propio)</label>
         <label><input type="radio" name="motivo" value="Invertir y generar plusvalía o rentas (inversión)">Invertir y
           generar plusvalía o rentas (inversión)</label>
         <label><input type="radio" name="motivo" value="Soy asesor o broker (buscando opciones para mis clientes)">Soy
           asesor o broker (buscando opciones para mis clientes)</label>
+        </div>
         <div class="forms-button-container">
           <button class="back-button" data-back-step="2">Atrás</button>
           <button id="toStep4">Siguiente</button>
@@ -104,9 +106,11 @@
       <!-- Paso 4: Pregunta de inversión -->
       <div class="step step-4 hidden">
         <h2>¿Qué tan pronto te gustaría invertir en tu nuevo departamento?</h2>
-        <label><input type="radio" name="invertir" value="De inmediato">De inmediato</label>
+        <div class="answers-container">
+          <label><input type="radio" name="invertir" value="De inmediato">De inmediato</label>
         <label><input type="radio" name="invertir" value="En los próximos meses">En los próximos meses</label>
         <label><input type="radio" name="invertir" value="A largo plazo">A largo plazo</label>
+        </div>
         <div class="forms-button-container">
           <button class="back-button" data-back-step="3">Atrás</button>
           <button id="toStep5">Siguiente</button>
@@ -116,8 +120,10 @@
       <!-- Paso 5: Pregunta de precio -->
       <div class="step step-5 hidden">
         <h2>¿Estás consciente de que nuestros lotes residenciales comienzan en $1,100,000 MXN?</h2>
-        <label><input type="radio" name="precio" value="Si">Sí</label>
+        <div class="answers-container">
+          <label><input type="radio" name="precio" value="Si">Sí</label>
         <label><input type="radio" name="precio" value="No">No</label>
+        </div>
         <div class="forms-button-container">
           <button class="back-button" data-back-step="4">Atrás</button>
           <button id="toStep6">Siguiente</button>
@@ -127,8 +133,10 @@
       <!-- Paso 6: Pregunta de  motivo -->
       <div class="step step-6 hidden">
         <h2 id="contactoQuestion"></h2>
-        <label><input type="radio" name="contacto" value="Videollamada por Zoom">Videollamada por Zoom</label>
+        <div class="answers-container">
+          <label><input type="radio" name="contacto" value="Videollamada por Zoom">Videollamada por Zoom</label>
         <label><input type="radio" name="contacto" value="Llamada telefónica">Llamada telefónica</label>
+        </div>
         <div class="forms-button-container">
           <button class="back-button" data-back-step="5">Atrás</button>
           <button id="toStep7">Siguiente</button>

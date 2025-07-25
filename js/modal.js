@@ -65,7 +65,7 @@ document.getElementById("hubspotForm").addEventListener("submit", (e) => {
     if (res.ok) {
       document.getElementById(
         "surveyIntro"
-      ).textContent = `${formData.firstname}, !Nos gustaria conocerte mejor! Te agradeceríamos si pudieras responder esta breve encuesta.`;
+      ).textContent = `${formData.firstname} ¡Nos gustaria conocerte mejor! Te agradeceríamos si pudieras responder esta breve encuesta.`;
       showStep(2);
     }
   });
@@ -75,7 +75,7 @@ document.getElementById("hubspotForm").addEventListener("submit", (e) => {
 document.getElementById("toStep3").addEventListener("click", () => {
   document.getElementById(
     "motivoQuestion"
-  ).textContent = `${formData.firstname}, ¿Qué te motiva más a invertir en un departamento a solo minutos del mar en Puerto Morelos?`;
+  ).textContent = `${formData.firstname} ¿Qué te motiva más a invertir en un departamento a solo minutos del mar en Puerto Morelos?`;
   showStep(3);
 });
 
@@ -175,7 +175,7 @@ function insertCalendar() {
 
 // Paso final: enviar email
 function sendConfirmationEmail() {
-  fetch("https://formsubmit.co/ajax/cristian.mendoza.026@gmail.com", {
+  fetch("https://formsubmit.co/ajax/operez@itmgroup.mx", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

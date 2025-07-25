@@ -174,7 +174,7 @@ function insertCalendar() {
 
 // Paso final: enviar email
 function sendConfirmationEmail() {
-  fetch("https://formsubmit.co/ajax/cristian.mendoza.026@gmail.com", {
+  fetch("https://formsubmit.co/ajax/operez@itmgroup.mx", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
