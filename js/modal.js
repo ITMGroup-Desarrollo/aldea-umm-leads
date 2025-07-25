@@ -7,6 +7,7 @@
     let formData = {};
     let contactoAnswer = '';
     let invertirAnswer = '';
+    let precioAnswer = '';
     let motivotoAnswer = '';
     // Mostrar modal
     agendarBtn.addEventListener('click', () => {
@@ -87,8 +88,16 @@
       showStep(5);
     });
 
-    // Paso 5 a 6 — guarda contacto y muestra calendario
+    // Paso 5 a 6 — guarda invertir
     document.getElementById('toStep6').addEventListener('click', () => {
+      const answer = document.querySelector('input[name="precio"]:checked');
+      if (!answer) return alert("Selecciona una opción.");
+      precioAnswer = answer.value;
+      showStep(6);
+    });
+
+    // Paso 6 a 7 — guarda contacto y muestra calendario
+    document.getElementById('toStep7').addEventListener('click', () => {
       const answer = document.querySelector('input[name="contacto"]:checked');
       if (!answer) return alert("Selecciona una opción.");
       contactoAnswer = answer.value;
@@ -162,6 +171,7 @@
           Email: formData.email,
           '¿Qué te motiva más a invertir en un departamento a solo minutos del mar en Puerto Morelos?': motivotoAnswer,
           '¿Qué tan pronto te gustaría invertir en tu nuevo departamento?': invertirAnswer,
+          '¿Estás consciente de que nuestros lotes residenciales comienzan en $1,100,000 MXN?': precioAnswer,
           '¿Cómo prefieres agendar tu cita virtual?': contactoAnswer,
           _template: "table"
         })

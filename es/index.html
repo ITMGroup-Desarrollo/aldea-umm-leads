@@ -107,16 +107,24 @@
         <button id="toStep5">Siguiente</button>
       </div>
 
-      <!-- Paso 5: Pregunta de  motivo -->
+      <!-- Paso 5: Pregunta de inversión -->
       <div class="step step-5 hidden">
-        <h2 id="contactoQuestion"></h2>
-        <label><input type="radio" name="contacto" value="Videollamada por Zoom">Videollamada por Zoom</label>
-        <label><input type="radio" name="contacto" value="Llamada telefónica">Llamada telefónica</label>
+        <h2>¿Estás consciente de que nuestros lotes residenciales comienzan en $1,100,000 MXN?</h2>
+        <label><input type="radio" name="invertir" value="Si">Sí</label>
+        <label><input type="radio" name="invertir" value="No">No</label>
         <button id="toStep6">Siguiente</button>
       </div>
 
-      <!-- Paso 7: Calendario -->
+      <!-- Paso 6: Pregunta de  motivo -->
       <div class="step step-6 hidden">
+        <h2 id="contactoQuestion"></h2>
+        <label><input type="radio" name="contacto" value="Videollamada por Zoom">Videollamada por Zoom</label>
+        <label><input type="radio" name="contacto" value="Llamada telefónica">Llamada telefónica</label>
+        <button id="toStep7">Siguiente</button>
+      </div>
+
+      <!-- Paso 7: Calendario -->
+      <div class="step step-7 hidden">
         <h2>Selecciona tu cita</h2>
         <div id="calendarContainer"></div>
       </div>
