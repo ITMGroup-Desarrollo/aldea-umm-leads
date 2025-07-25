@@ -94,7 +94,7 @@ document.getElementById("toStep5").addEventListener("click", () => {
   invertirAnswer = answer.value;
   document.getElementById(
     "contactoQuestion"
-  ).innerHTML = `${formData.firstname}, ¿Cómo prefieres agendar tu cita virtual?`;
+  ).innerHTML = `${formData.firstname} ¿Cómo prefieres agendar tu cita virtual?`;
   showStep(5);
 });
 
