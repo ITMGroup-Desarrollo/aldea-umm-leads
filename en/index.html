@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="../css/amenidades.css" />
   <link rel="stylesheet" href="../css/inversion.css" />
   <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/modal.css" />
+
 </head>
 
 <body>
@@ -50,7 +52,82 @@
       <a href="../en/"><img src="../assets/EU.png" alt="EU Logo" /></a>
     </div>
   </header>
-  <div id="hubspot-form"></div>
+  <!-- Formulario por defecto de hubspot -->
+  <!-- <div id="hubspot-form"></div> -->
+
+  <div id="formModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <!-- Paso 1: Formulario -->
+      <div class="step step-1">
+        <h2>Book your virtual appointment</h2>
+        <form id="hubspotForm">
+          <div class="form-row">
+            <input type="text" name="firstname" placeholder="Name" required>
+            <input type="text" name="lastname" placeholder="Lastname" required>
+          </div>
+          <div class="form-row">
+            <div class="country-code" style="display: flex; gap: 0.5rem; ">
+              <select id="countryCode" name="countryCode" required>
+                <option value="+1">US +1</option>
+                <option value="+52">MX +52</option>
+                <option value="+34">ES +34</option>
+                <option value="+44">GB +44</option>
+                <option value="+57">CO +57</option>
+                <option value="+54">AR +54</option>
+              </select>
+              <input type="tel" name="phone" placeholder="1234567890" required>
+            </div>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <button type="submit">Next</button>
+        </form>
+      </div>
+
+      <!-- Paso 2: Encuesta intro -->
+      <div class="step step-2 hidden">
+        <h2 id="surveyIntro"></h2>
+        <button id="toStep3">Next</button>
+      </div>
+
+      <!-- Paso 3: Pregunta de contacto -->
+      <div class="step step-3 hidden">
+        <h2 id="motivoQuestion"></h2>
+        <label><input type="radio" name="motivo" value="Vivirlo y disfrutarlo (uso propio)">Live it and enjoy it (own
+          use)</label>
+        <label><input type="radio" name="motivo" value="Invertir y generar plusvalía o rentas (inversión)">I am an
+          advisor or broker (looking for options for my clients)</label>
+        <label><input type="radio" name="motivo"
+            value="Soy asesor o broker (buscando opciones para mis clientes)"></label>
+        <button id="toStep4">Next</button>
+      </div>
+      <!-- Paso 4: Pregunta de inversión -->
+      <div class="step step-4 hidden">
+        <h2>How soon would you like to invest in your new apartment?</h2>
+        <label><input type="radio" name="invertir" value="De inmediato">immediately</label>
+        <label><input type="radio" name="invertir" value="En los próximos meses">In the coming months</label>
+        <label><input type="radio" name="invertir" value="A largo plazo">Long term</label>
+        <button id="toStep5">Next</button>
+      </div>
+
+      <!-- Paso 5: Pregunta de  motivo -->
+      <div class="step step-5 hidden">
+        <h2 id="contactoQuestion"></h2>
+        <label><input type="radio" name="contacto" value="Videollamada por Zoom">Zoom video call</label>
+        <label><input type="radio" name="contacto" value="Llamada telefónica">Phone call</label>
+        <button id="toStep6">Next</button>
+      </div>
+
+      <!-- Paso 7: Calendario -->
+      <div class="step step-6 hidden">
+        <h2>Select your appointment</h2>
+        <div id="calendarContainer"></div>
+      </div>
+
+    </div>
+  </div>
+
   <section id="first-subtitle-wrapper" style="padding-top: 1rem; padding-bottom: 1rem;">
     <div id="first-subtitle">
       <div class="text-container">
@@ -244,25 +321,14 @@
 
   </section>
   <section id="map">
-    <div class="map-container en"></div>
-    <div class="text-container">
-      <h2 class="first-text en">INVEST TODAY!</h2>
-      <p class="second-text en">in a title lot</p>
-      <p class="third-text"><span id="desde">from</span><span id="dinero">$60,000</span><span id="moneda">USD</span></p>
-      <span class="fourth-text">
-        <p>Exclusive bonuses for schedule virtual appointments.</p>
-        <p>Custom payment plans with no interest</p>
-      </span>
-    </div>
-  </section>
-  <section id="footer">
-    <div class="logos-container">
-      <img src="../assets/aldea-umm-logo.png" alt="logo aldea">
-      <img src="../assets/logo-ITM.png" alt="logo ITM">
-    </div>
-  </section>
-
-  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <section id="footer">
+      <div class="logos-container">
+        <img src="../assets/aldea-umm-logo.png" alt="logo aldea">
+        <img src="../assets/logo-ITM.png" alt="logo ITM">
+      </div>
+    </section>
+    <!-- formulario por defecto de hubspot -->
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
   <script>
     hbspt.forms.create({
       portalId: "39595277",
@@ -270,10 +336,238 @@
       region: "na1",
       target: "#hubspot-form"
     });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="/js/script.js"></script>
+  </script> -->
+    <!-- <script>
+    const form = document.getElementById("hubspotForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const data = {
+        fields: [
+          {
+            name: "firstname",
+            value: form.firstname.value
+          },
+          {
+            name: "lastname",
+            value: form.lastname.value
+          },
+          {
+            name: "phone",
+            value: form.countryCode.value + form.phone.value
+          },
+          {
+            name: "email",
+            value: form.email.value
+          }
+        ]
+      };
+
+      fetch("https://api.hsforms.com/submissions/v3/integration/submit/39595277/204dfa24-d904-4215-97bb-bff75709aeb9", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+        .then(response => {
+          if (response.ok) {
+            document.getElementById("message").innerText = "¡Formulario enviado correctamente!";
+            form.reset();
+          } else {
+            document.getElementById("message").innerText = "Error al enviar el formulario.";
+          }
+        })
+        .catch(error => {
+          console.error("Error:", error);
+          document.getElementById("message").innerText = "Error de conexión.";
+        });
+      console.log(JSON.stringify(data));
+    });
+  </script> -->
+    <script>
+      const modal = document.getElementById('formModal');
+      const closeBtn = document.querySelector('.modal .close');
+      const agendarBtn = document.getElementById('agendar-button');
+      const agendarBtn2 = document.getElementById('agendar-button2');
+      const agendarBtn3 = document.getElementById('agendar-button3');
+      let brochureRequested = false;
+      let formData = {};
+      let contactoAnswer = '';
+      let invertirAnswer = '';
+      let motivotoAnswer = '';
+      // Mostrar modal
+      agendarBtn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        showStep(1);
+      });
+      agendarBtn2.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        showStep(1);
+      });
+      agendarBtn3.addEventListener('click', () => {
+        brochureRequested = true;
+        modal.classList.remove('hidden');
+        showStep(1);
+      });
+      // Cerrar modal
+      closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+
+      // Control de pasos
+      function showStep(num) {
+        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+        document.querySelector(`.step-${num}`).classList.remove('hidden');
+      }
+
+      // Paso 1: Envío a HubSpot
+      document.getElementById('hubspotForm').addEventListener('submit', e => {
+        e.preventDefault();
+        const form = e.target;
+        formData = {
+          firstname: form.firstname.value,
+          lastname: form.lastname.value,
+          phone: (form.countryCode?.value || '') + form.phone.value,
+          email: form.email.value
+        };
+
+        const data = {
+          fields: [
+            { name: "firstname", value: formData.firstname },
+            { name: "lastname", value: formData.lastname },
+            { name: "phone", value: formData.phone },
+            { name: "email", value: formData.email }
+          ]
+        };
+
+        fetch("https://api.hsforms.com/submissions/v3/integration/submit/39595277/204dfa24-d904-4215-97bb-bff75709aeb9", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        })
+          .then(res => {
+            if (res.ok) {
+              document.getElementById("surveyIntro").textContent = `${formData.firstname}, !Nos gustaria conocerte mejor! Te agradeceríamos si pudieras responder esta breve encuesta.`;
+              showStep(2);
+            }
+          });
+      });
+
+      // Paso 2 a 3 — ahora solo muestra la pregunta
+      document.getElementById('toStep3').addEventListener('click', () => {
+        document.getElementById("motivoQuestion").textContent = `${formData.firstname}, ¿Qué te motiva más a invertir en un departamento a solo minutos del mar en Puerto Morelos?`;
+        showStep(3);
+      });
+
+      // Paso 3 a 4 — guarda motivo
+      document.getElementById('toStep4').addEventListener('click', () => {
+        const answer = document.querySelector('input[name="motivo"]:checked');
+        if (!answer) return alert("Selecciona una opción.");
+        motivotoAnswer = answer.value;
+        showStep(4);
+      });
+
+      // Paso 4 a 5 — guarda invertir
+      document.getElementById('toStep5').addEventListener('click', () => {
+        const answer = document.querySelector('input[name="invertir"]:checked');
+        if (!answer) return alert("Selecciona una opción.");
+        invertirAnswer = answer.value;
+        document.getElementById("contactoQuestion").innerHTML = `${formData.firstname}, ¿Cómo prefieres agendar tu cita virtual?`;
+        showStep(5);
+      });
+
+      // Paso 5 a 6 — guarda contacto y muestra calendario
+      document.getElementById('toStep6').addEventListener('click', () => {
+        const answer = document.querySelector('input[name="contacto"]:checked');
+        if (!answer) return alert("Selecciona una opción.");
+        contactoAnswer = answer.value;
+
+        // Enviar correo
+        sendConfirmationEmail();
+
+        // Si viene del botón de brochure, descarga el PDF
+        if (brochureRequested) {
+          const link = document.createElement('a');
+          link.href = '../assets/brochure-en.pdf';
+          link.download = 'Aldea-Umm-Brochure.pdf';
+
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
+
+        // Mostrar calendario
+        showStep(6);
+        insertCalendar();
+
+        // Reset flag para futuros agendamientos
+        brochureRequested = false;
+      });
+
+      // Paso 4: Insertar calendario de HubSpot con valores precargados
+      function insertCalendar() {
+        const container = document.getElementById('calendarContainer');
+        container.innerHTML = '';
+
+        // Preparamos los datos del formulario para la URL
+        const queryParams = new URLSearchParams({
+          firstname: formData.firstname,
+          lastname: formData.lastname,
+          email: formData.email,
+          phone: formData.phone
+        }).toString();
+
+        // Insertamos el iframe con los parámetros
+        const calendarDiv = document.createElement("div");
+        calendarDiv.className = "meetings-iframe-container";
+        calendarDiv.setAttribute("data-src", `https://meetings.hubspot.com/octavio23?embed=true&${queryParams}`);
+        container.appendChild(calendarDiv);
+
+        // Script de HubSpot Meetings
+        const script = document.createElement("script");
+        script.src = "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js";
+        script.type = "text/javascript";
+        container.appendChild(script);
+        // Cierra el modal automáticamente después de 2 minutos (opcional)
+        // setTimeout(() => {
+        //   modal.classList.add('hidden');
+        // }, 120000);
+
+      }
+
+
+      // Paso final: enviar email
+      function sendConfirmationEmail() {
+        fetch("https://formsubmit.co/ajax/cristian.mendoza.026@gmail.com", {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            Nombre: formData.firstname,
+            Apellidos: formData.lastname,
+            Teléfono: formData.phone,
+            Email: formData.email,
+            '¿Qué te motiva más a invertir en un departamento a solo minutos del mar en Puerto Morelos?': motivotoAnswer,
+            '¿Qué tan pronto te gustaría invertir en tu nuevo departamento?': invertirAnswer,
+            '¿Cómo prefieres agendar tu cita virtual?': contactoAnswer,
+            _template: "table"
+          })
+        })
+          .then(res => res.json())
+          .then(data => console.log("Correo enviado:", data))
+          .catch(error => console.error("Error al enviar el correo:", error));
+      }
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/modal-en.js"></script>
 </body>
 
 <style></style>

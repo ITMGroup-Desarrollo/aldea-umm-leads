@@ -1,0 +1,98 @@
+.form-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem 10rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.input {
+    margin-right: 1rem;
+}
+
+select#countryCode {
+    padding: 0.8rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+input,
+button {
+    padding: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    width: 30%;
+}
+
+.name-container {
+    display: flex;
+}
+
+#message {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.step {
+    display: none;
+}
+
+.step:not(.hidden) {
+    display: block;
+}
+
+.modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
