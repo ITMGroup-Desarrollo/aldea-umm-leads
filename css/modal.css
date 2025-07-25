@@ -1,3 +1,6 @@
+button, label {
+  cursor: pointer;
+}
 .form-container {
     max-width: 400px;
     margin: 100px auto;
