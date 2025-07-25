@@ -59,7 +59,7 @@
       })
         .then(res => {
           if (res.ok) {
-            document.getElementById("surveyIntro").textContent = `${formData.firstname}, !Nos gustaria conocerte mejor! Te agradeceríamos si pudieras responder esta breve encuesta.`;
+            document.getElementById("surveyIntro").textContent = `${formData.firstname}, We'd love to get to know you better! We'd appreciate it if you could take this short survey.`;
             showStep(2);
           }
         });
@@ -67,7 +67,7 @@
 
     // Paso 2 a 3 — ahora solo muestra la pregunta
     document.getElementById('toStep3').addEventListener('click', () => {
-      document.getElementById("motivoQuestion").textContent = `${formData.firstname}, ¿Qué te motiva más a invertir en un departamento a solo minutos del mar en Puerto Morelos?`;
+      document.getElementById("motivoQuestion").textContent = `${formData.firstname}, What motivates you most to invest in an apartment just minutes from the ocean in Puerto Morelos?`;
       showStep(3);
     });
 
@@ -84,7 +84,7 @@
       const answer = document.querySelector('input[name="invertir"]:checked');
       if (!answer) return alert("Select an option.");
       invertirAnswer = answer.value;
-      document.getElementById("contactoQuestion").innerHTML = `${formData.firstname}, ¿Cómo prefieres agendar tu cita virtual?`;
+      document.getElementById("contactoQuestion").innerHTML = `${formData.firstname}, How do you prefer to schedule your virtual appointment?`;
       showStep(5);
     });
     // Paso 5 a 6 — guarda precio
@@ -116,7 +116,7 @@
       }
 
       // Mostrar calendario
-      showStep(6);
+      showStep(7);
       insertCalendar();
 
       // Reset flag para futuros agendamientos

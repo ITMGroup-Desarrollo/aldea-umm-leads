@@ -117,7 +117,7 @@
       }
 
       // Mostrar calendario
-      showStep(6);
+      showStep(7);
       insertCalendar();
 
       // Reset flag para futuros agendamientos
