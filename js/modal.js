@@ -88,7 +88,7 @@
       showStep(5);
     });
 
-    // Paso 5 a 6 — guarda invertir
+    // Paso 5 a 6 — guarda precio
     document.getElementById('toStep6').addEventListener('click', () => {
       const answer = document.querySelector('input[name="precio"]:checked');
       if (!answer) return alert("Selecciona una opción.");
