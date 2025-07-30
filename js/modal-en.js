@@ -35,7 +35,7 @@ function showStep(num) {
 }
 
 // Paso 1: Envío a HubSpot
-document.getElementById("hubspotForm").addEventListener("submit", (e) => {
+document.getElementById("Registro-Aldea-Umm").addEventListener("submit", (e) => {
   e.preventDefault();
   const form = e.target;
   formData = {
