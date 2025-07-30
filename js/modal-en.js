@@ -63,6 +63,10 @@ document.getElementById("hubspotForm").addEventListener("submit", (e) => {
     }
   ).then((res) => {
     if (res.ok) {
+      fbq("track", "Lead", {
+        content_name: "Registro Aldea Umm",
+        form_location: "Landing Promocional",
+      });
       document.getElementById(
         "surveyIntro"
       ).textContent = `${formData.firstname}, We'd love to get to know you better! We'd appreciate it if you could take this short survey.`;
@@ -199,3 +203,22 @@ function sendConfirmationEmail() {
     .then((data) => console.log("Correo enviado:", data))
     .catch((error) => console.error("Error al enviar el correo:", error));
 }
+// Escuchar evento de finalización de cita en HubSpot Meetings
+window.addEventListener("message", function (event) {
+  const data = event.data;
+
+  // Validar que sea de HubSpot Meetings y que sea un submit
+  if (
+    typeof data === "object" &&
+    data.type === "hsFormCallback" &&
+    data.eventName === "onFormSubmitted"
+  ) {
+    // Disparar evento de Meta Pixel
+    fbq('track', 'Schedule', {
+      content_name: 'Calendario Aldea Umm',
+      form_location: 'Landing Promocional'
+    });
+
+    console.log("Evento Schedule enviado a Meta Pixel");
+  }
+});
