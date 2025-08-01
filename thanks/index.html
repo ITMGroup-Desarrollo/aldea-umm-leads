@@ -49,17 +49,17 @@ img{
 
   <script>
     // Contador regresivo
-    // let counter = 9;
-    // const countdownElement = document.getElementById("countdown");
+    let counter = 9;
+    const countdownElement = document.getElementById("countdown");
 
-    // const interval = setInterval(() => {
-    //   counter--;
-    //   countdownElement.textContent = counter;
-    //   if (counter === 0) {
-    //     clearInterval(interval);
-    //     window.location.href = "../es/";
-    //   }
-    // }, 1000);
+    const interval = setInterval(() => {
+      counter--;
+      countdownElement.textContent = counter;
+      if (counter === 0) {
+        clearInterval(interval);
+        window.location.href = "../es/";
+      }
+    }, 1000);
 
     // Evento personalizado de Meta Pixel al cargar
     window.addEventListener('load', () => {
