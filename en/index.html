@@ -403,66 +403,6 @@
         <img src="../assets/logo-ITM.png" alt="logo ITM">
       </div>
     </section>
-    <!-- formulario por defecto de hubspot -->
-    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-  <script>
-    hbspt.forms.create({
-      portalId: "39595277",
-      formId: "204dfa24-d904-4215-97bb-bff75709aeb9",
-      region: "na1",
-      target: "#hubspot-form"
-    });
-  </script> -->
-    <!-- <script>
-    const form = document.getElementById("Registro-Aldea-Umm");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const data = {
-        fields: [
-          {
-            name: "firstname",
-            value: form.firstname.value
-          },
-          {
-            name: "lastname",
-            value: form.lastname.value
-          },
-          {
-            name: "phone",
-            value: form.countryCode.value + form.phone.value
-          },
-          {
-            name: "email",
-            value: form.email.value
-          }
-        ]
-      };
-
-      fetch("https://api.hsforms.com/submissions/v3/integration/submit/39595277/204dfa24-d904-4215-97bb-bff75709aeb9", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      })
-        .then(response => {
-          if (response.ok) {
-            document.getElementById("message").innerText = "¡Formulario enviado correctamente!";
-            form.reset();
-          } else {
-            document.getElementById("message").innerText = "Error al enviar el formulario.";
-          }
-        })
-        .catch(error => {
-          console.error("Error:", error);
-          document.getElementById("message").innerText = "Error de conexión.";
-        });
-      console.log(JSON.stringify(data));
-    });
-  </script> -->
-
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
