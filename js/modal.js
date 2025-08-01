@@ -9,6 +9,7 @@ let contactoAnswer = "";
 let invertirAnswer = "";
 let precioAnswer = "";
 let motivotoAnswer = "";
+let interes = "H Living";
 // Mostrar modal
 agendarBtn.addEventListener("click", () => {
   modal.classList.remove("hidden");
@@ -51,6 +52,7 @@ document.getElementById("Registro-Aldea-Umm").addEventListener("submit", (e) => 
       { name: "lastname", value: formData.lastname },
       { name: "phone", value: formData.phone },
       { name: "email", value: formData.email },
+      { name: "interes", value: interes },
     ],
   };
 
@@ -186,6 +188,7 @@ function sendConfirmationEmail() {
       Accept: "application/json",
     },
     body: JSON.stringify({
+      "Desarrollo de interes": interes,
       Nombre: formData.firstname,
       Apellidos: formData.lastname,
       Teléfono: formData.phone,
