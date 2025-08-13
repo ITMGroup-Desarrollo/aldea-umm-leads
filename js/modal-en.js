@@ -81,7 +81,7 @@ document.getElementById("Registro-Aldea-Umm").addEventListener("submit", (e) => 
 document.getElementById("toStep3").addEventListener("click", () => {
   document.getElementById(
     "motivoQuestion"
-  ).textContent = `${formData.firstname}, What motivates you most to invest in an apartment just minutes from the ocean in Puerto Morelos?`;
+  ).textContent = `${formData.firstname}, What motivates you most to invest in an residential lot just minutes from the ocean in Puerto Morelos?`;
   showStep(3);
 });
 
