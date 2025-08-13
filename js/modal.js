@@ -193,13 +193,13 @@ function sendConfirmationEmail() {
       Apellidos: formData.lastname,
       Teléfono: formData.phone,
       Email: formData.email,
-      "¿Qué te motiva más a invertir en un departamento a solo minutos del mar en Puerto Morelos?":
+      "¿Qué te motiva más a invertir en un lote residencial a solo minutos del mar en Puerto Morelos?":
         motivotoAnswer,
-      "¿Qué tan pronto te gustaría invertir en tu nuevo departamento?":
+      "¿Qué tan pronto te gustaría invertir en tu nuevo lote residencial?":
         invertirAnswer,
       "¿Estás consciente de que nuestros lotes residenciales comienzan en $1,100,000 MXN?":
         precioAnswer,
-      // "¿Cómo prefieres agendar tu cita virtual?": contactoAnswer,
+      "¿Cómo prefieres agendar tu cita virtual?": contactoAnswer,
       _template: "table",
     }),
   })
