@@ -81,7 +81,7 @@ document.getElementById("Registro-Aldea-Umm").addEventListener("submit", (e) => 
 document.getElementById("toStep3").addEventListener("click", () => {
   document.getElementById(
     "motivoQuestion"
-  ).textContent = `${formData.firstname} ¿Qué te motiva más a invertir en un departamento a solo minutos del mar en Puerto Morelos?`;
+  ).textContent = `${formData.firstname} ¿Qué te motiva más a invertir en un lote residencial a solo minutos del mar en Puerto Morelos?`;
   showStep(3);
 });
 
