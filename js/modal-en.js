@@ -103,18 +103,19 @@ document.getElementById("toStep5").addEventListener("click", () => {
   ).innerHTML = `${formData.firstname}, How do you prefer to schedule your virtual appointment?`;
   showStep(5);
 });
-// Paso 5 a 6 — guarda precio, envía correo, maneja brochure y muestra calendario
+// Paso 5 a 6 — guarda precio
 document.getElementById("toStep6").addEventListener("click", () => {
   const answer = document.querySelector('input[name="precio"]:checked');
   if (!answer) return alert("Select an option.");
-
   precioAnswer = answer.value;
-
-  // Avanza al paso 6
   showStep(6);
+});
 
-  // Muestra/inyecta el calendario en el paso 6
-  insertCalendar();
+// Paso 6 a 7 — guarda contacto y muestra calendario
+document.getElementById("toStep7").addEventListener("click", () => {
+  const answer = document.querySelector('input[name="contacto"]:checked');
+  if (!answer) return alert("Select an option.");
+  contactoAnswer = answer.value;
 
   // Enviar correo
   sendConfirmationEmail();
@@ -124,10 +125,15 @@ document.getElementById("toStep6").addEventListener("click", () => {
     const link = document.createElement("a");
     link.href = "../assets/brochure-en.pdf";
     link.download = "Aldea-Umm-Brochure.pdf";
+
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
+
+  // Mostrar calendario
+  showStep(7);
+  insertCalendar();
 
   // Reset flag para futuros agendamientos
   brochureRequested = false;

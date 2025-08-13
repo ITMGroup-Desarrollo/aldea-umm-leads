@@ -104,18 +104,19 @@ document.getElementById("toStep5").addEventListener("click", () => {
   showStep(5);
 });
 
-// Paso 5 a 6 — guarda precio, envía correo, maneja brochure y muestra calendario
+// Paso 5 a 6 — guarda precio
 document.getElementById("toStep6").addEventListener("click", () => {
   const answer = document.querySelector('input[name="precio"]:checked');
   if (!answer) return alert("Selecciona una opción.");
-
   precioAnswer = answer.value;
-
-  // Avanza al paso 6 (calendario)
   showStep(6);
+});
 
-  // Muestra el calendario en el contenedor
-  insertCalendar();
+// Paso 6 a 7 — guarda contacto y muestra calendario
+document.getElementById("toStep7").addEventListener("click", () => {
+  const answer = document.querySelector('input[name="contacto"]:checked');
+  if (!answer) return alert("Selecciona una opción.");
+  contactoAnswer = answer.value;
 
   // Enviar correo
   sendConfirmationEmail();
@@ -125,23 +126,19 @@ document.getElementById("toStep6").addEventListener("click", () => {
     const link = document.createElement("a");
     link.href = "../assets/brochure-en.pdf";
     link.download = "Aldea-Umm-Brochure.pdf";
+
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
 
+  // Mostrar calendario
+  showStep(7);
+  insertCalendar();
+
   // Reset flag para futuros agendamientos
   brochureRequested = false;
 });
-
-// Botones de retroceso
-document.querySelectorAll(".back-button").forEach((button) => {
-  button.addEventListener("click", (e) => {
-    const backStep = e.target.getAttribute("data-back-step");
-    showStep(backStep);
-  });
-});
-
 document.querySelectorAll(".back-button").forEach((button) => {
   button.addEventListener("click", (e) => {
     const backStep = e.target.getAttribute("data-back-step");
