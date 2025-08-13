@@ -61,22 +61,22 @@ img{
   <!-- End Facebook Pixel (noscript) -->
   <img src="/assets/gracias.jpg" alt="thanks image">
   <div style="font-size: 2rem;">
-    Se te redirigirá al inicio... <span id="countdown">9</span>
+    Se te redirigirá al inicio... <span id="countdown">16</span>
   </div>
 
   <script>
     // Contador regresivo
-    let counter = 9;
+    let counter = 16;
     const countdownElement = document.getElementById("countdown");
 
-    const interval = setInterval(() => {
-      counter--;
-      countdownElement.textContent = counter;
-      if (counter === 0) {
-        clearInterval(interval);
-        window.location.href = "../es/";
-      }
-    }, 1000);
+    // const interval = setInterval(() => {
+    //   counter--;
+    //   countdownElement.textContent = counter;
+    //   if (counter === 0) {
+    //     clearInterval(interval);
+    //     window.location.href = "../es/";
+    //   }
+    // }, 1000);
 
     // Evento personalizado de Meta Pixel al cargar
     window.addEventListener('load', () => {

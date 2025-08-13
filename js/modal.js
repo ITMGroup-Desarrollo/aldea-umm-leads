@@ -199,7 +199,7 @@ function sendConfirmationEmail() {
         invertirAnswer,
       "¿Estás consciente de que nuestros lotes residenciales comienzan en $1,100,000 MXN?":
         precioAnswer,
-      "¿Cómo prefieres agendar tu cita virtual?": contactoAnswer,
+      // "¿Cómo prefieres agendar tu cita virtual?": contactoAnswer,
       _template: "table",
     }),
   })
