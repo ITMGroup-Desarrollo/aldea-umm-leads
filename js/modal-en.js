@@ -5,7 +5,6 @@ const agendarBtn2 = document.getElementById("agendar-button2");
 const agendarBtn3 = document.getElementById("agendar-button3");
 let brochureRequested = false;
 let formData = {};
-let contactoAnswer = "";
 let invertirAnswer = "";
 let precioAnswer = "";
 let motivotoAnswer = "";
@@ -98,29 +97,18 @@ document.getElementById("toStep5").addEventListener("click", () => {
   const answer = document.querySelector('input[name="invertir"]:checked');
   if (!answer) return alert("Select an option.");
   invertirAnswer = answer.value;
-  document.getElementById(
-    "contactoQuestion"
-  ).innerHTML = `${formData.firstname}, How do you prefer to schedule your virtual appointment?`;
   showStep(5);
 });
-// Paso 5 a 6 — guarda precio
+// Step 5 to 6 — save price awareness
 document.getElementById("toStep6").addEventListener("click", () => {
   const answer = document.querySelector('input[name="precio"]:checked');
   if (!answer) return alert("Select an option.");
   precioAnswer = answer.value;
-  showStep(6);
-});
 
-// Paso 6 a 7 — guarda contacto y muestra calendario
-document.getElementById("toStep7").addEventListener("click", () => {
-  const answer = document.querySelector('input[name="contacto"]:checked');
-  if (!answer) return alert("Select an option.");
-  contactoAnswer = answer.value;
-
-  // Enviar correo
+  // Send confirmation email
   sendConfirmationEmail();
 
-  // Si viene del botón de brochure, descarga el PDF
+  // If coming from brochure button, download PDF
   if (brochureRequested) {
     const link = document.createElement("a");
     link.href = "../assets/brochure-en.pdf";
@@ -131,13 +119,14 @@ document.getElementById("toStep7").addEventListener("click", () => {
     document.body.removeChild(link);
   }
 
-  // Mostrar calendario
-  showStep(7);
+  // Show calendar
+  showStep(6);
   insertCalendar();
 
-  // Reset flag para futuros agendamientos
+  // Reset flag for future scheduling
   brochureRequested = false;
 });
+
 document.querySelectorAll(".back-button").forEach((button) => {
   button.addEventListener("click", (e) => {
     const backStep = e.target.getAttribute("data-back-step");
@@ -198,7 +187,6 @@ function sendConfirmationEmail() {
         invertirAnswer,
       "¿Estás consciente de que nuestros lotes residenciales comienzan en $1,100,000 MXN?":
         precioAnswer,
-      "¿Cómo prefieres agendar tu cita virtual?": contactoAnswer,
       _template: "table",
     }),
   })

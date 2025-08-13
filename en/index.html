@@ -154,13 +154,13 @@
           <button id="toStep4">Next</button>
         </div>
       </div>
-      <!-- Paso 4: Pregunta de inversión -->
+      <!-- Step 4: Investment timing question -->
       <div class="step step-4 hidden">
         <h2>How soon would you like to invest in your new residential lot?</h2>
         <div class="answers-container">
-          <label><input type="radio" name="invertir" value="De inmediato">immediately</label>
-        <label><input type="radio" name="invertir" value="En los próximos meses">In the coming months</label>
-        <label><input type="radio" name="invertir" value="A largo plazo">Long term</label>
+          <label><input type="radio" name="invertir" value="De inmediato">Immediately</label>
+          <label><input type="radio" name="invertir" value="En los próximos meses">In the coming months</label>
+          <label><input type="radio" name="invertir" value="A largo plazo">Long term</label>
         </div>
         <div class="forms-button-container">
           <button class="back-button" data-back-step="3">Back</button>
@@ -168,37 +168,25 @@
         </div>
       </div>
 
-      <!-- Paso 5: Pregunta de precio -->
+      <!-- Step 5: Price awareness question -->
       <div class="step step-5 hidden">
         <h2>Are you aware that our residential lots start at $1,100,000 MXN?</h2>
         <div class="answers-container">
           <label><input type="radio" name="precio" value="si">Yes</label>
-        <label><input type="radio" name="precio" value="No">No</label>
+          <label><input type="radio" name="precio" value="No">No</label>
         </div>
         <div class="forms-button-container">
           <button class="back-button" data-back-step="4">Back</button>
-          <button id="toStep7">Next</button>
+          <button id="toStep6">Next</button>
         </div>
       </div>
 
-      <!-- Paso 6: Pregunta de  contacto -->
+      <!-- Step 6: Calendar -->
       <div class="step step-6 hidden">
-        <h2 id="contactoQuestion"></h2>
-        <div class="answers-container">
-          <label><input type="radio" name="contacto" value="Videollamada por Zoom">Zoom video call</label>
-        <label><input type="radio" name="contacto" value="Llamada telefónica">Phone call</label>
-        </div>
-        <div class="forms-button-container">
-          <button class="back-button" data-back-step="5">Back</button>
-          <button id="toStep7">Next</button>
-        </div>
-      </div>
-
-      <!-- Paso 7: Calendario -->
-      <div class="step step-7 hidden">
         <h2>Select your appointment</h2>
         <div id="calendarContainer"></div>
       </div>
+
 
     </div>
   </div>
